@@ -28,32 +28,27 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
+import com.floppydisk.sandwichmod.item.ModItems;
+import com.floppydisk.sandwichmod.item.ModCreativeModeTabs;
+
 @Mod(SandwichMod.MODID)
 public class SandwichMod {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "sandwichmod";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public SandwichMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
-        // Register the commonSetup method for modloading
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
-
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup (final FMLCommonSetupEvent event) {
-    }
-
-    // Add the example block item to the building blocks tab
-    private void addCreative (BuildCreativeModeTabContentsEvent event) {
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
