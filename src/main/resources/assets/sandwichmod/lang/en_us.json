@@ -1,9 +1,13 @@
 {
     "item.sandwichmod.stainless_steel_knife": "Stainless Steel Knife",
 
+    "block.sandwichmod.cutter": "Cutter",
+
     "block.sandwichmod.stainless_steel_block": "Block of Stainless Steel",
 
     "item.sandwichmod.stainless_steel_ingot": "Stainless Steel Ingot",
+
+    "item.sandwichmod.stainless_steel_blade": "Stainless Steel Blade",
     
     "item.sandwichmod.stainless_steel_dust": "Stainless Steel Dust",
     "item.sandwichmod.chromium_dust": "Chromium Dust",

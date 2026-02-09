@@ -1,6 +1,7 @@
 package com.floppydisk.sandwichmod.block;
 
 import com.floppydisk.sandwichmod.SandwichMod;
+import com.floppydisk.sandwichmod.block.custom.CutterBlock;
 import com.floppydisk.sandwichmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -30,6 +31,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_CHROMITE_ORE = registerBlock("deepslate_chromite_ore",
         () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
         .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+
+    public static final RegistryObject<Block> CUTTER = registerBlock("cutter",
+        () -> new CutterBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

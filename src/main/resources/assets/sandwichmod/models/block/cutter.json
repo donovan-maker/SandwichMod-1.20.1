@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "down": "sandwichmod:block/stainless_steel_block",
+        "east": "sandwichmod:block/stainless_steel_block",
+        "north": "sandwichmod:block/stainless_steel_block",
+        "particle": "sandwichmod:block/stainless_steel_block",
+        "south": "sandwichmod:block/stainless_steel_block",
+        "up": "sandwichmod:block/cutter",
+        "west": "sandwichmod:block/stainless_steel_block"
+    }
+}

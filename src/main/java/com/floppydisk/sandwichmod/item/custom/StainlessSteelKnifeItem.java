@@ -13,30 +13,30 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 
 public class StainlessSteelKnifeItem extends Item {
-    private boolean knifed;
 
     public StainlessSteelKnifeItem(Properties pProperties) {
         super(pProperties);
-        this.knifed = false;
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+        boolean knifed = false;
         if (!pLevel.isClientSide) {
-            replaceItemInOffhand(pPlayer, new ItemStack(Items.IRON_INGOT), new ItemStack(ModItems.IRON_DUST.get(), 1));
+            knifed = replaceItemInOffhand(pPlayer, 1, new ItemStack(Items.IRON_INGOT), new ItemStack(ModItems.IRON_DUST.get(), 1));
         }
-        if (this.knifed) {
+        if (knifed) {
             pPlayer.getItemInHand(pUsedHand).hurtAndBreak(1, pPlayer,
                     player -> player.broadcastBreakEvent(player.getUsedItemHand()));
         }
         return InteractionResultHolder.sidedSuccess(pPlayer.getItemInHand(pUsedHand), pLevel.isClientSide);
     }
 
-    private void replaceItemInOffhand(Player player, ItemStack takingItem, ItemStack givingItem) {
+    private boolean replaceItemInOffhand(Player player, int count, ItemStack takingItem, ItemStack givingItem) {
         if (ItemStack.isSameItemSameTags(player.getOffhandItem(), takingItem)) {
-            player.getOffhandItem().shrink(1);
+            player.getOffhandItem().shrink(count);
             player.getInventory().add(givingItem);
-            this.knifed = true;
+            return true;
         }
+        return false;
     }
 }

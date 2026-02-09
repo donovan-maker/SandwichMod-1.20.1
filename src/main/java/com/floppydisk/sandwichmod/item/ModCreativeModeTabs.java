@@ -20,8 +20,10 @@ public class ModCreativeModeTabs {
         .title(Component.translatable("creativetab.sandwich_tab"))
         .displayItems((pParameters, pOutput) -> {
             pOutput.accept(ModItems.STAINLESS_STEEL_KNIFE.get());
+            pOutput.accept(ModBlocks.CUTTER.get());
             pOutput.accept(ModBlocks.STAINLESS_STEEL_BLOCK.get());
             pOutput.accept(ModItems.STAINLESS_STEEL_INGOT.get());
+            pOutput.accept(ModItems.STAINLESS_STEEL_BLADE.get());
             pOutput.accept(ModItems.STAINLESS_STEEL_DUST.get());
             pOutput.accept(ModItems.CHROMIUM_DUST.get());
             pOutput.accept(ModItems.IRON_DUST.get());

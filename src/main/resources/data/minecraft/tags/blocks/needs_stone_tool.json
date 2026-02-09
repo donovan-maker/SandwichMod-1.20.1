@@ -1,6 +1,7 @@
 {
     "values": [
         "sandwichmod:stainless_steel_block",
+        "sandwichmod:cutter",
         "sandwichmod:chromite_ore",
         "sandwichmod:deepslate_chromite_ore"
     ]

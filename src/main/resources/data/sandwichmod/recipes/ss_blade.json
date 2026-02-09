@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        " I ",
+        "IPI",
+        " I "
+    ],
+    "key": {
+        "I": {
+            "item": "sandwichmod:stainless_steel_ingot"
+        },
+        "P": {
+            "tag": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "sandwichmod:stainless_steel_blade"
+    }
+}
