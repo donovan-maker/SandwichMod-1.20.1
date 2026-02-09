@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "category": "misc",
+    "experience": 0.7,
+    "ingredient": {
+        "item": "sandwichmod:stainless_steel_dust"
+    },
+    "result": "sandwichmod:stainless_steel_ingot"
+}

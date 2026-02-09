@@ -15,6 +15,10 @@ public class ModItems {
         () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> STAINLESS_STEEL_DUST = ITEMS.register("stainless_steel_dust",
         () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHROMIUM_DUST = ITEMS.register("chromium_dust",
+        () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust",
+        () -> new Item(new Item.Properties()));
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

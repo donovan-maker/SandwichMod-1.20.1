@@ -30,6 +30,7 @@ import org.slf4j.Logger;
 
 import com.floppydisk.sandwichmod.item.ModItems;
 import com.floppydisk.sandwichmod.item.ModCreativeModeTabs;
+import com.floppydisk.sandwichmod.block.ModBlocks;
 
 @Mod(SandwichMod.MODID)
 public class SandwichMod {
@@ -42,6 +43,7 @@ public class SandwichMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
