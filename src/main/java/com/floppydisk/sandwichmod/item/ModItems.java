@@ -21,10 +21,20 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust",
         () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> STAINLESS_STEEL_KNIFE = ITEMS.register("stainless_steel_knife",
-        () -> new StainlessSteelKnifeItem(new Item.Properties().durability(250)));
+        () -> new StainlessSteelKnifeItem(new Item.Properties()));
     public static final RegistryObject<Item> STAINLESS_STEEL_BLADE = ITEMS.register("stainless_steel_blade",
         () -> new Item(new Item.Properties()));
-    
+    public static final RegistryObject<Item> PB_J_SANDWICH = ITEMS.register("pb_j_sandwich",
+        () -> new Item(new Item.Properties().food(ModFoods.PB_J_SANDWICH)));
+    public static final RegistryObject<Item> CUT_PB_J_SANDWICH = ITEMS.register("cut_pb_j_sandwich",
+        () -> new Item(new Item.Properties().food(ModFoods.CUT_PB_J_SANDWICH)));
+    public static final RegistryObject<Item> PEANUT = ITEMS.register("peanut",
+            () -> new Item(new Item.Properties().food(ModFoods.PEANUT)));
+    public static final RegistryObject<Item> PEANUT_BUTTER = ITEMS.register("peanut_butter",
+            () -> new Item(new Item.Properties().food(ModFoods.PEANUT_BUTTER)));
+    public static final RegistryObject<Item> SWEET_BERRY_JELLY = ITEMS.register("sweet_berry_jelly",
+            () -> new Item(new Item.Properties().food(ModFoods.SWEET_BERRY_JELLY)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

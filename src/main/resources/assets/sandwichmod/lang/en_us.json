@@ -16,5 +16,12 @@
     "block.sandwichmod.chromite_ore": "Chromite Ore",
     "block.sandwichmod.deepslate_chromite_ore": "Deepslate Chromite Ore",
 
+    "item.sandwichmod.pb_j_sandwich": "PB&J Sandwich",
+    "item.sandwichmod.cut_pb_j_sandwich": "Cut PB&J Sandwich",
+
+    "item.sandwichmod.peanut": "Peanut",
+    "item.sandwichmod.peanut_butter": "Peanut Butter",
+    "item.sandwichmod.sweet_berry_jelly": "Sweet Berry Jelly",
+
     "creativetab.sandwich_tab": "Sandwich Mod"
 }

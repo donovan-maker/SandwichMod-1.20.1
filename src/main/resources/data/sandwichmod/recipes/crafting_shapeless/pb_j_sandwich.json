@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "sandwichmod:peanut_butter"
+        },
+        {
+            "item": "sandwichmod:sweet_berry_jelly"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "sandwichmod:stainless_steel_knife"
+        }
+    ],
+    "result": {
+        "item": "sandwichmod:pb_j_sandwich",
+        "count": 1
+    }
+}

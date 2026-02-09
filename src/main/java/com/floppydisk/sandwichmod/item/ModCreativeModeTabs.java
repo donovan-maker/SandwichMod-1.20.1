@@ -29,6 +29,11 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModItems.IRON_DUST.get());
             pOutput.accept(ModBlocks.CHROMITE_ORE.get());
             pOutput.accept(ModBlocks.DEEPSLATE_CHROMITE_ORE.get());
+            pOutput.accept(ModItems.PB_J_SANDWICH.get());
+            pOutput.accept(ModItems.CUT_PB_J_SANDWICH.get());
+            pOutput.accept(ModItems.PEANUT.get());
+            pOutput.accept(ModItems.PEANUT_BUTTER.get());
+            pOutput.accept(ModItems.SWEET_BERRY_JELLY.get());
         })
         .build());
     

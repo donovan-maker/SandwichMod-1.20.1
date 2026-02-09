@@ -1,6 +1,7 @@
 package com.floppydisk.sandwichmod.item.custom;
 
 import com.floppydisk.sandwichmod.item.ModItems;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -12,16 +13,19 @@ import net.minecraft.world.level.Level;
 public class StainlessSteelKnifeItem extends Item {
 
     public StainlessSteelKnifeItem(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.durability(250));
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        boolean knifed = false;
+        boolean cut = false;
         if (!pLevel.isClientSide) {
-            knifed = replaceItemInOffhand(pPlayer, 1, new ItemStack(Items.IRON_INGOT), new ItemStack(ModItems.IRON_DUST.get(), 1));
+            cut = replaceItemInOffhand(pPlayer, 1, new ItemStack(Items.IRON_INGOT), new ItemStack(ModItems.IRON_DUST.get(), 1));
+            cut = replaceItemInOffhand(pPlayer, 1, new ItemStack(ModItems.PB_J_SANDWICH.get()), new ItemStack(ModItems.CUT_PB_J_SANDWICH.get(), 2));
+            cut = replaceItemInOffhand(pPlayer, 1, new ItemStack(ModItems.PEANUT.get()), new ItemStack(ModItems.PEANUT_BUTTER.get(), 1));
+            cut = replaceItemInOffhand(pPlayer, 1, new ItemStack(Items.SWEET_BERRIES), new ItemStack(ModItems.SWEET_BERRY_JELLY.get(), 1));
         }
-        if (knifed) {
+        if (cut) {
             pPlayer.getItemInHand(pUsedHand).hurtAndBreak(1, pPlayer,
                     player -> player.broadcastBreakEvent(player.getUsedItemHand()));
         }
@@ -35,5 +39,17 @@ public class StainlessSteelKnifeItem extends Item {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public ItemStack getCraftingRemainingItem(ItemStack itemStack) {
+        ItemStack copy = itemStack.copy();
+        copy.hurt(1, RandomSource.create(), null);
+        return copy.isEmpty() ? ItemStack.EMPTY : copy;
     }
 }

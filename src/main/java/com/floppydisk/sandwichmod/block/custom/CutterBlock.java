@@ -25,7 +25,11 @@ public class CutterBlock extends Block {
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide) {
-            boolean cut = replaceItem(pPlayer, pHand, 1, new ItemStack(Items.IRON_INGOT), new ItemStack(ModItems.IRON_DUST.get(), 1));
+            boolean cut = false;
+            cut = replaceItem(pPlayer, pHand, 1, new ItemStack(Items.IRON_INGOT), new ItemStack(ModItems.IRON_DUST.get(), 1)) || cut;
+            cut = replaceItem(pPlayer, pHand, 1, new ItemStack(ModItems.PB_J_SANDWICH.get()), new ItemStack(ModItems.CUT_PB_J_SANDWICH.get(), 2)) || cut;
+            cut = replaceItem(pPlayer, pHand, 1, new ItemStack(ModItems.PEANUT.get()), new ItemStack(ModItems.PEANUT_BUTTER.get(), 1)) || cut;
+            cut = replaceItem(pPlayer, pHand, 1, new ItemStack(Items.SWEET_BERRIES), new ItemStack(ModItems.SWEET_BERRY_JELLY.get(), 1)) || cut;
             if (cut) {
                 pLevel.playSound(null, pPos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 1f, 1f);
             }
