@@ -1,15 +1,12 @@
 package com.floppydisk.sandwichmod.item.custom;
 
 import com.floppydisk.sandwichmod.item.ModItems;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 
 public class StainlessSteelKnifeItem extends Item {
