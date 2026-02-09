@@ -1,6 +1,7 @@
 package com.floppydisk.sandwichmod.item;
 
 import com.floppydisk.sandwichmod.SandwichMod;
+import com.floppydisk.sandwichmod.item.custom.StainlessSteelKnifeItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,8 +18,10 @@ public class ModItems {
         () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHROMIUM_DUST = ITEMS.register("chromium_dust",
         () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust",
+    public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust",
         () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STAINLESS_STEEL_KNIFE = ITEMS.register("stainless_steel_knife",
+        () -> new StainlessSteelKnifeItem(new Item.Properties().durability(250)));
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

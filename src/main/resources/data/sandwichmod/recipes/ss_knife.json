@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "I",
+        "S"
+    ],
+    "key": {
+        "I": {
+            "item": "sandwichmod:stainless_steel_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "sandwichmod:stainless_steel_knife"
+    }
+}
