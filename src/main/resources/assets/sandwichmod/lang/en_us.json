@@ -23,5 +23,10 @@
     "item.sandwichmod.peanut_butter": "Peanut Butter",
     "item.sandwichmod.sweet_berry_jelly": "Sweet Berry Jelly",
 
+    "tooltip.sandwichmod.stainless_steel_knife_line1.tooltip": "A knife you can use to cut things",
+    "tooltip.sandwichmod.stainless_steel_knife_line2.tooltip": "Has 250 durability",
+    "tooltip.sandwichmod.cutter_line1.tooltip": "A cutter block that works like a knife",
+    "tooltip.sandwichmod.cutter_line2.tooltip": "Unlike a knife this block has no durability",
+
     "creativetab.sandwich_tab": "Sandwich Mod"
 }
