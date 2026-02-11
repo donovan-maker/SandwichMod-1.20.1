@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
         () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STAINLESS_STEEL_INGOT.get()))
         .title(Component.translatable("creativetab.sandwich_tab"))
         .displayItems((pParameters, pOutput) -> {
-            pOutput.accept(ModItems.STAINLESS_STEEL_KNIFE.get());
+            pOutput.accept(ModItems.KNIFE.get());
             pOutput.accept(ModBlocks.CUTTER.get());
             pOutput.accept(ModBlocks.STAINLESS_STEEL_BLOCK.get());
             pOutput.accept(ModItems.STAINLESS_STEEL_INGOT.get());

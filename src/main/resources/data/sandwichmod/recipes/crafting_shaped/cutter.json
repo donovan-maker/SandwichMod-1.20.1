@@ -10,7 +10,7 @@
             "item": "sandwichmod:stainless_steel_blade"
         },
         "S": {
-            "item": "sandwichmod:stainless_steel_block"
+            "tag": "forge:storage_blocks/steel"
         }
     },
     "result": {

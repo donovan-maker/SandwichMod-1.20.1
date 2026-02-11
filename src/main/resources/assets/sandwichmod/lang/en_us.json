@@ -1,5 +1,5 @@
 {
-    "item.sandwichmod.stainless_steel_knife": "Stainless Steel Knife",
+    "item.sandwichmod.knife": "Knife",
 
     "block.sandwichmod.cutter": "Cutter",
 
@@ -23,8 +23,8 @@
     "item.sandwichmod.peanut_butter": "Peanut Butter",
     "item.sandwichmod.sweet_berry_jelly": "Sweet Berry Jelly",
 
-    "tooltip.sandwichmod.stainless_steel_knife_line1.tooltip": "A knife you can use to cut things",
-    "tooltip.sandwichmod.stainless_steel_knife_line2.tooltip": "Has 250 durability",
+    "tooltip.sandwichmod.knife_line1.tooltip": "A knife you can use to cut things",
+    "tooltip.sandwichmod.knife_line2.tooltip": "Has 250 durability",
     "tooltip.sandwichmod.cutter_line1.tooltip": "A cutter block that works like a knife",
     "tooltip.sandwichmod.cutter_line2.tooltip": "Unlike a knife this block has no durability",
 

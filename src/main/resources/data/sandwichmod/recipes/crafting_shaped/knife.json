@@ -7,13 +7,13 @@
     ],
     "key": {
         "I": {
-            "item": "sandwichmod:stainless_steel_ingot"
+            "tag": "forge:ingots/steel"
         },
         "S": {
-            "item": "minecraft:stick"
+            "tag": "forge:rods/wooden"
         }
     },
     "result": {
-        "item": "sandwichmod:stainless_steel_knife"
+        "item": "sandwichmod:knife"
     }
 }

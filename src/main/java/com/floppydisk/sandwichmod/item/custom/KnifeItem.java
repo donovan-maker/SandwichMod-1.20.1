@@ -15,9 +15,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class StainlessSteelKnifeItem extends Item {
+public class KnifeItem extends Item {
 
-    public StainlessSteelKnifeItem(Properties pProperties) {
+    public KnifeItem(Properties pProperties) {
         super(pProperties.durability(250));
     }
 
@@ -48,8 +48,8 @@ public class StainlessSteelKnifeItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.sandwichmod.stainless_steel_knife_line1.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.sandwichmod.stainless_steel_knife_line2.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.sandwichmod.knife_line1.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.sandwichmod.knife_line2.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 

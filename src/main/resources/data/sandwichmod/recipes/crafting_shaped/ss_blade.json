@@ -8,7 +8,7 @@
     ],
     "key": {
         "I": {
-            "item": "sandwichmod:stainless_steel_ingot"
+            "tag": "forge:ingots/steel"
         },
         "P": {
             "tag": "minecraft:planks"
