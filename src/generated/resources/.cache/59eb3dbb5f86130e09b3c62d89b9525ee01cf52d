@@ -1,0 +1,5 @@
+// 1.20.1	2026-02-20T11:47:21.6496906	Loot Tables
+c2ca1443ba581632f598b4a9548af358bf65c8dc data/sandwichmod/loot_tables/blocks/chromite_ore.json
+588f7f52b78e334192e2d2cd7826102b00ccdb8a data/sandwichmod/loot_tables/blocks/cutter.json
+3cd7846bc8089f9c7af3d1d81cbae475066ce36e data/sandwichmod/loot_tables/blocks/deepslate_chromite_ore.json
+23d21df5be9b2c4fe14d76f6546e4bae76e91631 data/sandwichmod/loot_tables/blocks/stainless_steel_block.json

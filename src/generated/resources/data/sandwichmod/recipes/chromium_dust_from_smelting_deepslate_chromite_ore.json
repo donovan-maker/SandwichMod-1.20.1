@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "chromite",
+  "ingredient": {
+    "item": "sandwichmod:deepslate_chromite_ore"
+  },
+  "result": "sandwichmod:chromium_dust"
+}

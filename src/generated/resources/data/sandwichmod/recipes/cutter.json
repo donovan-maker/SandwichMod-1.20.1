@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "sandwichmod:stainless_steel_blade"
+    },
+    "S": {
+      "item": "sandwichmod:stainless_steel_block"
+    }
+  },
+  "pattern": [
+    "B",
+    "S"
+  ],
+  "result": {
+    "item": "sandwichmod:cutter"
+  },
+  "show_notification": true
+}

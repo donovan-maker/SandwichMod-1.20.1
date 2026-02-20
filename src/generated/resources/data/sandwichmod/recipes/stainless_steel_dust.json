@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sandwichmod:iron_dust"
+    },
+    {
+      "item": "sandwichmod:chromium_dust"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "sandwichmod:stainless_steel_dust"
+  }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "minecraft:block/cube_all",
-    "textures": {
-        "all": "sandwichmod:block/chromite_ore"
-    }
-}

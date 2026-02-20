@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chromite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sandwichmod:chromite_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sandwichmod:chromium_dust_from_blasting_chromite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_chromite_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sandwichmod:chromium_dust_from_blasting_chromite_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}
